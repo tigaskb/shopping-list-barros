@@ -37,7 +37,7 @@ with st.form("nova_compra"):
     if orcamento > 0:
         fig, ax = plt.subplots(figsize=(8, 8))
         if not dados.empty:
-         produtos = dados["produto"].tolist()
+            produtos = dados["produto"].tolist()
             valores = dados["preco"].tolist()
             restante = orcamento - total
         if restante > 0:
