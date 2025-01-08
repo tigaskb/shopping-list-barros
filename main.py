@@ -52,7 +52,7 @@ with st.form("nova_compra"):
         plt.title(f"orçamento: {orcamento}€")
         centro = plt.Circle((0, 0), 0.70, fc='white')
         ax.add_artist(centro)
-    st.pyplot(fig)
+        st.pyplot(fig)
     st.dataframe(dados)
     st.write(f"total gasto: {total}€")
     st.write(f"resta: {orcamento - total}€")
